@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="/css/mdb.min.css">
+
+    <!-- Your custom styles (optional) -->
+    <style>
+
+    </style>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/js/mdb.min.js"></script>
+</head>
+
+<body class="fixed-sn white-skin <!--<%= process.env.header_color %> lighten-2-->">
+
+<!-- Main Navigation -->
+<header>
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav sn-bg-4 fixed ">
+        <ul class="custom-scrollbar">
+
+            <!-- Logo -->
+            <li class="logo-sn waves-effect py-3">
+                <div class="text-center">
+                    <a href="#" class="pl-0"><img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"></a>
+                </div>
+            </li>
+
+            <!-- Search Form -->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="md-form mt-0 waves-light">
+                        <input type="text" class="form-control py-2" placeholder="Search">
+                    </div>
+                </form>
+            </li>
+
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa fas fa-tachometer-alt"></i>Dashboards<i
+                                    class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../dashboards/v-1.html" class="waves-effect">Version 1</a>
+                                </li>
+                                <li>
+                                    <a href="../dashboards/v-2.html" class="waves-effect">Version 2</a>
+                                </li>
+                                <li>
+                                    <a href="../dashboards/v-3.html" class="waves-effect">Version 3</a>
+                                </li>
+                                <li>
+                                    <a href="../dashboards/v-4.html" class="waves-effect">Version 4</a>
+                                </li>
+                                <li>
+                                    <a href="../dashboards/v-5.html" class="waves-effect">Version 5</a>
+                                </li>
+                                <li>
+                                    <a href="../dashboards/v-6.html" class="waves-effect">Version 6</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa fas fa-image"></i>Pages<i class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../pages/login.html" class="waves-effect">Login</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/register.html" class="waves-effect">Register</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/pricing.html" class="waves-effect">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/about.html" class="waves-effect">About us</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/single.html" class="waves-effect">Single post</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/post.html" class="waves-effect">Post listing</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/landing.html" class="waves-effect">Landing page</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/customers.html" class="waves-effect">Customers</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/invoice.html" class="waves-effect">Invoice</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/page-creator.html" class="waves-effect">Page Creator</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/support.html" class="waves-effect">Support</a>
+                                </li>
+                                <li>
+                                    <a href="../pages/chat.html" class="waves-effect">Chat</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa fas fa-user"></i>Profile<i class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../profile/basic-1.html" class="waves-effect">Basic 1</a>
+                                </li>
+                                <li>
+                                    <a href="../profile/basic-2.html" class="waves-effect">Basic 2</a>
+                                </li>
+                                <li>
+                                    <a href="../profile/extended.html" class="waves-effect">Extended</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa fab fa-css3"></i>CSS<i class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../css/grid.html" class="waves-effect">Grid system</a>
+                                </li>
+                                <li>
+                                    <a href="../css/media.html" class="waves-effect">Media object</a>
+                                </li>
+                                <li>
+                                    <a href="../css/utilities.html" class="waves-effect">Utilities / helpers</a>
+                                </li>
+                                <li>
+                                    <a href="../css/code.html" class="waves-effect">Code</a>
+                                </li>
+                                <li>
+                                    <a href="../css/icons.html" class="waves-effect">Icons</a>
+                                </li>
+                                <li>
+                                    <a href="../css/images.html" class="waves-effect">Images</a>
+                                </li>
+                                <li>
+                                    <a href="../css/typography.html" class="waves-effect">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="../css/animations.html" class="waves-effect">Animations</a>
+                                </li>
+                                <li>
+                                    <a href="../css/colors.html" class="waves-effect">Colors</a>
+                                </li>
+                                <li>
+                                    <a href="../css/hover.html" class="waves-effect">Hover effects</a>
+                                </li>
+                                <li>
+                                    <a href="../css/masks.html" class="waves-effect">Masks</a>
+                                </li>
+                                <li>
+                                    <a href="../css/shadows.html" class="waves-effect">Shadows</a>
+                                </li>
+                                <li>
+                                    <a href="../css/skins.html" class="waves-effect">Skins</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa fas fa-th"></i>Components<i class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../components/buttons.html" class="waves-effect">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="../components/cards.html" class="waves-effect">Cards</a>
+                                </li>
+                                <li>
+                                    <a href="../components/collapse.html" class="waves-effect">Collapse</a>
+                                </li>
+                                <li>
+                                    <a href="../components/date.html" class="waves-effect">Date picker</a>
+                                </li>
+                                <li>
+                                    <a href="../components/list.html" class="waves-effect">List group</a>
+                                </li>
+                                <li>
+                                    <a href="../components/panels.html" class="waves-effect">Panels</a>
+                                </li>
+                                <li>
+                                    <a href="../components/pagination.html" class="waves-effect">Pagination</a>
+                                </li>
+                                <li>
+                                    <a href="../components/popovers.html" class="waves-effect">Popovers</a>
+                                </li>
+                                <li>
+                                    <a href="../components/progress.html" class="waves-effect">Progress bars</a>
+                                </li>
+                                <li>
+                                    <a href="../components/stepper.html" class="waves-effect">Stepper</a>
+                                </li>
+                                <li>
+                                    <a href="../components/tabs.html" class="waves-effect">Tabs & pills</a>
+                                </li>
+                                <li>
+                                    <a href="../components/tags.html" class="waves-effect">Tags, labels & badges</a>
+                                </li>
+                                <li>
+                                    <a href="../components/time.html" class="waves-effect">Time picker</a>
+                                </li>
+                                <li>
+                                    <a href="../components/tooltips.html" class="waves-effect">Tooltips</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa far fa-check-square"></i>Forms<i class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../forms/basic.html" class="waves-effect">Basic</a>
+                                </li>
+                                <li>
+                                    <a href="../forms/extended.html" class="waves-effect">Extended</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa fas fa-table"></i>Tables<i class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../tables/basic.html" class="waves-effect">Basic</a>
+                                </li>
+                                <li>
+                                    <a href="../tables/extended.html" class="waves-effect">Extended</a>
+                                </li>
+                                <li>
+                                    <a href="../tables/datatables.html" class="waves-effect">DataTables.net</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="w-fa fas fa-map"></i>Maps<i class="fas fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="../maps/google.html" class="waves-effect">Google Maps</a>
+                                </li>
+                                <li>
+                                    <a href="../maps/full.html" class="waves-effect">Full screen map</a>
+                                </li>
+                                <li>
+                                    <a href="../maps/vector.html" class="waves-effect">Vector world map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Simple link -->
+                    <li>
+                        <a href="../alerts/alerts.html" class="collapsible-header waves-effect"><i
+                                    class="w-fa far fa-bell"></i>Alerts</a>
+                    </li>
+                    <li>
+                        <a href="../modals/modals.html" class="collapsible-header waves-effect"><i
+                                    class="w-fa fas fa-bolt"></i>Modals</a>
+                    </li>
+                    <li>
+                        <a href="../charts/charts.html" class="collapsible-header waves-effect"><i
+                                    class="w-fa fas fa-chart-pie"></i>Charts</a>
+                    </li>
+                    <li>
+                        <a href="../calendar/calendar.html" class="collapsible-header waves-effect"><i
+                                    class="w-fa far fa-calendar-check"></i>Calendar</a>
+                    </li>
+                    <li>
+                        <a href="../sections/sections.html" class="collapsible-header waves-effect"><i
+                                    class="w-fa fas fa-th-large"></i>Sections</a>
+                    </li>
+
+                </ul>
+            </li>
+            <!-- Side navigation links -->
+
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!-- Sidebar navigation -->
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav white-text primary-color <!--<%= process.env.header_color %>--> ">
+
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="button-collapse white-text"><i class="fas fa-bars"></i></a>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-dn mr-auto">
+            <p><%= process.env.title %></p>
+        </div>
+
+        <div class="d-flex change-mode">
+
+            <!--<div class="ml-auto mr-3 change-mode-wrapper">
+                <button class="btn btn-outline-black btn-sm" id="dark-mode">Change Mode</button>
+            </div>-->
+
+            <!-- Navbar links -->
+            <ul class="nav navbar-nav nav-flex-icons ml-auto flex-center">
+
+                <!-- Dropdown -->
+                <!--<li class="nav-item dropdown notifications-nav">
+                    <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <span class="badge red">3</span> <i class="fas fa-bell"></i>
+                        <span class="d-none d-md-inline-block">Notifications</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">
+                            <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+                            <span>New order received</span>
+                            <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 13 min</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="far fa-money-bill-alt mr-2" aria-hidden="true"></i>
+                            <span>New order received</span>
+                            <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 33 min</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+                            <span>Your campaign is about to end</span>
+                            <span class="float-right"><i class="far fa-clock" aria-hidden="true"></i> 53 min</span>
+                        </a>
+                    </div>
+                </li>-->
+                <% if(!req.originalUrl.indexOf("administrator") > 0) { %>
+                    <li class="nav-item flex-center">
+                        <a class="nav-link waves-effect white-text waves-light" href="#" data-toggle="modal"
+                           data-target="#cart-modal-ex">
+
+                            <span class="badge danger-color">4</span>
+
+                            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+
+                            <!--<span class="clearfix d-none d-sm-inline-block">Cart</span>-->
+
+                        </a>
+                    </li>
+                <% } else { %>
+                    <li class="nav-item flex-center">
+                        <a class="nav-link waves-effect white-text waves-light" href="#" data-toggle="modal"
+                           data-target="#notif-modal-ex">
+                            <% if(notifications.length > 0){ %>
+                                <span class="badge danger-color"><%= notifications.length %></span>
+                            <% } %>
+                            <i class="fas fa-bell" aria-hidden="true"></i>
+
+
+                            <!--<span class="clearfix d-none d-sm-inline-block">Cart</span>-->
+
+                        </a>
+                    </li>
+                <% } %>
+                <li class="nav-item dropdown">
+                    <a class="nav-link white-text <!--waves-effect-->" href="#" id="userDropdown" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <!--<i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Profile</span>-->
+                        <img src="/img/users/photo.jpg" class="rounded-circle waves-effect waves-light">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Log Out</a>
+                        <a class="dropdown-item" href="#">My account</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+    <!-- Navbar -->
+    </div>
+    <!--Modal For Purchases-->
+    <div class="modal fade cart-modal" id="cart-modal-ex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         style="display: none;" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+
+            <!-- Content -->
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+
+                    <h4 class="modal-title font-weight-bold" id="myModalLabel">Your cart</h4>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                        <span aria-hidden="true">×</span>
+
+                    </button>
+
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+
+                    <table class="table table-hover">
+
+                        <thead>
+
+                        <tr>
+
+                            <th>#</th>
+
+                            <th>Product name</th>
+
+                            <th>Price</th>
+
+                            <th>Remove</th>
+
+                        </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+
+                            <th scope="row">1</th>
+
+                            <td>Product 1</td>
+
+                            <td>100$</td>
+
+                            <td>
+
+                                <a>
+
+                                    <i class="fas fa-eraser"></i>
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">2</th>
+
+                            <td>Product 2</td>
+
+                            <td>100$</td>
+
+                            <td>
+
+                                <a>
+
+                                    <i class="fas fa-eraser"></i>
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">3</th>
+
+                            <td>Product 3</td>
+
+                            <td>100$</td>
+
+                            <td>
+
+                                <a>
+
+                                    <i class="fas fa-eraser"></i>
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th scope="row">4</th>
+
+                            <td>Product 4</td>
+
+                            <td>100$</td>
+
+                            <td>
+
+                                <a>
+
+                                    <i class="fas fa-eraser"></i>
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <button class="btn btn-yellow btn-rounded btn-sm waves-effect waves-light">Checkout</button>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn blue darken-3 btn-rounded white-text btn-sm waves-effect waves-light"
+                            data-dismiss="modal">Close
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- Content -->
+
+        </div>
+
+    </div>
+
+    <!--Modal For Notif-->
+    <div class="modal fade cart-modal" id="notif-modal-ex" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel"
+         style="display: none;" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+
+            <!-- Content -->
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+
+                    <h4 class="modal-title font-weight-bold" id="myModalLabel">Notifications</h4>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                        <span aria-hidden="true">×</span>
+
+                    </button>
+
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+
+                    <table class="table table-hover">
+
+                        <thead>
+
+                        <tr>
+
+                            <th>#</th>
+
+                            <th>Title</th>
+
+                            <th>Text</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                        </thead>
+
+                        <% if(notifications.length > 0){ %>
+                            <tbody>
+                            <!--<% for(var notif of notifications){ %>
+                                <tr>
+                                    <th scope="row"><%= Object.keys(notif) %></th>
+                                    <td><%= notif.title %></td>
+                                    <td><%= notif.text %></td>
+                                    <td>
+
+                                        <a>
+
+                                            <i class="fas fa-eraser"></i>
+
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+                            <% } %>-->
+                            <% notifications.forEach(function(el, index) { %>
+                                <tr>
+                                    <th scope="row"><%= index+1 %></th>
+                                    <td><%= el.title %></td>
+                                    <td><%= el.text %></td>
+                                    <td>
+
+                                        <a>
+
+                                            <i class="fas fa-eraser"></i>
+
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+                            <%}); %>
+                            </tbody>
+                        <% } %>
+
+                    </table>
+
+                    <button class="btn btn-red btn-rounded btn-sm waves-effect waves-light">Clear All</button>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn blue darken-3 btn-rounded white-text btn-sm waves-effect waves-light"
+                            data-dismiss="modal">Close
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- Content -->
+
+        </div>
+
+    </div>
+    <!-- Initializations -->
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+
+        var container = document.querySelector('.custom-scrollbar');
+        var ps = new PerfectScrollbar(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+
+        // Tooltips Initialization
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+
+        /*$('#dark-mode').on('click', function (e) {
+
+            e.preventDefault();
+            $('footer').toggleClass('mdb-color lighten-4 dark-card-admin');
+            $('body, .navbar').toggleClass('white-skin navy-blue-skin');
+            $(this).toggleClass('white text-dark btn-outline-black');
+            $('body').toggleClass('dark-bg-admin');
+            $('.card').toggleClass('dark-card-admin');
+            $('h6, .card, p, td, th, i, li a, h4, input, label').not(
+                '#slide-out i, #slide-out a, .dropdown-item i, .dropdown-item').toggleClass('text-white');
+            $('.btn-dash').toggleClass('grey blue').toggleClass('lighten-3 darken-3');
+            $('.gradient-card-header').toggleClass('white dark-card-admin');
+
+            if ($('.navbar').hasClass('navy-blue-skin')) {
+                for (let i = 0; i <= 5; i++) {
+                    myBarChart.data.datasets[0].data[i] = (Math.random(i) * 100);
+                }
+
+                Chart.defaults.global.defaultFontColor = '#fff';
+            } else {
+
+                for (let i = 0; i <= 5; i++) {
+                    myBarChart.data.datasets[0].data[i] = (Math.random(i) * 100);
+                }
+
+                Chart.defaults.global.defaultFontColor = '#666';
+            }
+
+            myBarChart.update();
+
+        });
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            $('footer').toggleClass('mdb-color lighten-4 dark-card-admin');
+            $('body, .navbar').toggleClass('white-skin navy-blue-skin');
+            $(this).toggleClass('white text-dark btn-outline-black');
+            $('body').toggleClass('dark-bg-admin');
+            $('.card').toggleClass('dark-card-admin');
+            $('h6, .card, p, td, th, i, li a, h4, input, label').not(
+                '#slide-out i, #slide-out a, .dropdown-item i, .dropdown-item').toggleClass('text-white');
+            $('.btn-dash').toggleClass('grey blue').toggleClass('lighten-3 darken-3');
+            $('.gradient-card-header').toggleClass('white dark-card-admin');
+
+            if ($('.navbar').hasClass('navy-blue-skin')) {
+                for (let i = 0; i <= 5; i++) {
+                    myBarChart.data.datasets[0].data[i] = (Math.random(i) * 100);
+                }
+
+                Chart.defaults.global.defaultFontColor = '#fff';
+            } else {
+
+                for (let i = 0; i <= 5; i++) {
+                    myBarChart.data.datasets[0].data[i] = (Math.random(i) * 100);
+                }
+
+                Chart.defaults.global.defaultFontColor = '#666';
+            }
+        }*/
+        const ChangeMode = () => {
+            $('footer').toggleClass('mdb-color lighten-4 dark-card-admin');
+            $('body, .navbar').toggleClass('white-skin navy-blue-skin');
+            $(this).toggleClass('white text-dark btn-outline-black');
+            $('body').toggleClass('dark-bg-admin');
+            $('.card').toggleClass('dark-card-admin');
+
+            $('.modal-content').toggleClass('dark-card-admin');
+
+            $('h6, .card, p, td, th, i, li a, h4, input, label').not(
+                '#slide-out i, #slide-out a, .dropdown-item i, .dropdown-item').toggleClass('text-white');
+            $('.btn-dash').toggleClass('grey blue').toggleClass('lighten-3 darken-3');
+            $('.gradient-card-header').toggleClass('white dark-card-admin');
+
+            if ($('.navbar').hasClass('navy-blue-skin')) {
+                for (let i = 0; i <= 5; i++) {
+                    myBarChart.data.datasets[0].data[i] = (Math.random(i) * 100);
+                }
+
+                Chart.defaults.global.defaultFontColor = '#fff';
+            } else {
+
+                for (let i = 0; i <= 5; i++) {
+                    myBarChart.data.datasets[0].data[i] = (Math.random(i) * 100);
+                }
+
+                Chart.defaults.global.defaultFontColor = '#666';
+            }
+        }
+        matcher = window.matchMedia('(prefers-color-scheme: dark)');
+        matcher.addListener(ChangeMode);
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+            ChangeMode();
+
+
+        /*var ali=prompt("Dark Mode?")
+        ali=="y"?ChangeMode():void 0*/
+
+
+    </script>
+</header>
