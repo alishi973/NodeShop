@@ -53,15 +53,15 @@
                     </div>
                 </form>
             </li>
-
+            <% var userView=req=="/administrator"?"Administrator":user?"User":"Guest";%>
+            <p class="flex-center black-text"><%=userView%></p>
             <!-- Side navigation links -->
             <li>
                 <ul class="collapsible collapsible-accordion">
 
                     <li>
                         <a class="collapsible-header waves-effect arrow-r">
-                            <i class="w-fa fas fa-tachometer-alt"></i>Dashboards<i
-                                    class="fas fa-angle-down rotate-icon"></i>
+                            <i class="w-fa fas fa-tachometer-alt"></i>Dashboards<i class="fas fa-angle-down rotate-icon"></i>
                         </a>
                         <div class="collapsible-body">
                             <ul>

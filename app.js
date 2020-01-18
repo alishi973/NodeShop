@@ -40,6 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 let indexRouter = require('./routes/index')(express);
 let authRouter = require('./routes/auth')(express);
 let adminRouter = require('./routes/admin')(express);
+let userRouter = require('./routes/user')(express);
 
 //Authenticate check Middleware
 app.use((req, res, next) => {
@@ -57,9 +58,11 @@ app.use((req, res, next) => {
 },'/administrator', "/api"))*/
 app.use((req,res,next)=>{
     let notifs=[{title:"slm",text:"این یک متن پیام ناتیفیکیشن میباشد",type:"danger"},{title:"بروز رسانی سرور ها",text:"این یک متن پیام ناتیفیکیشن میباشد",type:"default"}];
+    let user;/*TODO:User Authenticating*/
     res.locals={
         req:req.url,
-        notifications:notifs
+        notifications:notifs,
+        user:user
     }
 
     next()
@@ -73,6 +76,7 @@ app.use((req, res, next) => {
 })
 app.use('/', indexRouter);
 app.use('/administrator', adminRouter);
+app.use('/user', userRouter);
 app.use(authRouter);
 
 
