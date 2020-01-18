@@ -2,7 +2,6 @@ let createError = require('http-errors'), express = require('express'), path = r
     cookieParser = require('cookie-parser'), logger = require('morgan'), bodyParser = require('body-parser'),dotenv = require('dotenv').config()
     ,mongoose=require("mongoose"),categories=require("./models/category")
 
-//dotenv.config();
 
 let app = express();
 
@@ -57,9 +56,9 @@ app.use((req, res, next) => {
     next()
 },'/administrator', "/api"))*/
 app.use((req,res,next)=>{
-    let notifs=[{title:"slm",text:"این یک متن پیام ناتیفیکیشن میباشد",color:"red"},{title:"بروز رسانی سرور ها",text:"این یک متن پیام ناتیفیکیشن میباشد",color:"yellow"}];
+    let notifs=[{title:"slm",text:"این یک متن پیام ناتیفیکیشن میباشد",type:"danger"},{title:"بروز رسانی سرور ها",text:"این یک متن پیام ناتیفیکیشن میباشد",type:"default"}];
     res.locals={
-        req:req,
+        req:req.url,
         notifications:notifs
     }
 
